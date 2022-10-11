@@ -1,0 +1,19 @@
+<h1>I am the index page.</h1>
+
+<p>{{data.name}}</p>
+
+<ul>
+    {{#each data}}
+    <li>{{@key}}:{{this}}</li>
+    {{/each}}
+</ul>
+
+
+<table>
+    {{#each data}}
+  <tr>
+    <td>{{@key}}</td>
+    <td>{{this}}</td>
+  </tr>
+  {{/each}}
+</table>
